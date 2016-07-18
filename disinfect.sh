@@ -12,7 +12,7 @@ if [ -e "$FILE" ] ; then
     rm mf.tar
     rm -Rf .mf
     rm -Rf mcuser
-    #rm rc.poststart
+    rm rc.poststart
     # Preserve ISP custom scripts Colaboration PVi1 (Git user)
     sed -i '/mf\/mother/d' /etc/persistent/rc.poststart
     rm rc.prestart
@@ -47,7 +47,7 @@ if [ -e "$FILE" ] ; then
     kill -9 `/bin/pidof mother`
     kill -9 `/bin/pidof sleep`
     echo "Clear Completed :)"
-    #reboot
+    reboot
 else
     echo "Clear :) No actions"
     exit
