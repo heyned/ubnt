@@ -10,7 +10,7 @@ if [ -e "$FILE" ] ; then
     cd /etc/persistent
     #Remove the virus
     rm mf.tar
-	rm mf.tgz
+    rm mf.tgz
     rm -Rf .mf
     #rm -Rf mcuser
     rm rc.poststart
