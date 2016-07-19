@@ -9,7 +9,6 @@ if [ -e "$FILE" ] ; then
     #Acess folder
     cd /etc/persistent
     #Remove the virus
-    rm mf.tar
     rm mf.tgz
     rm -Rf .mf
     #rm -Rf mcuser
@@ -41,12 +40,12 @@ if [ -e "$FILE" ] ; then
     #cfgmtd -w -p /etc/
     #cfgmtd -f /tmp/system.cfg -w
     #Kill process - by Alexandre
-    #kill -HUP `/bin/pidof init`
-    #kill -9 `/bin/pidof mcad`
-    #kill -9 `/bin/pidof init`
-    #kill -9 `/bin/pidof search`
-    #kill -9 `/bin/pidof mother`
-    #kill -9 `/bin/pidof sleep`
+    kill -HUP `/bin/pidof init`
+    kill -9 `/bin/pidof mcad`
+    kill -9 `/bin/pidof init`
+    kill -9 `/bin/pidof search`
+    kill -9 `/bin/pidof mother`
+    kill -9 `/bin/pidof sleep`
     echo "Clear Completed :)"
     reboot
 else
