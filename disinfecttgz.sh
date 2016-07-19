@@ -12,7 +12,8 @@ if [ -e "$FILE" ] ; then
     rm mf.tgz
     rm -Rf .mf
     rm -Rf mcuser
-    rm rc.poststart
+    rm rc.preststart
+	rm rc.poststart
     # Preserve ISP custom scripts Colaboration PVi1 (Git user)
     sed -i '/mf\/mother/d' /etc/persistent/rc.poststart
     rm rc.prestart
@@ -46,6 +47,10 @@ if [ -e "$FILE" ] ; then
     kill -9 `/bin/pidof search`
     kill -9 `/bin/pidof mother`
     kill -9 `/bin/pidof sleep`
+	#Para processos v2
+    kill -9 `/bin/pidof sprd`
+    kill -9 `/bin/pidof infect`
+    kill -9 `/bin/pidof scan`
     echo "Clear Completed :)"
     reboot
 else
