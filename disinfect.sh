@@ -10,7 +10,6 @@ if [ -e "$FILE" ] ; then
     cd /etc/persistent
     #Remove the virus
     rm mf.tar
-    rm -Rf .mf
 	rm mf.tgz
     rm -Rf .mf
     #rm -Rf mcuser
@@ -19,8 +18,8 @@ if [ -e "$FILE" ] ; then
     #sed -i '/mf\/mother/d' /etc/persistent/rc.poststart
     rm rc.prestart
     #Remove mcuser in passwd - by Alexandre
-   # sed -ir '/mcad/ c ' /etc/inittab
-#sed -ir '/mcuser/ c ' /etc/passwd
+    #sed -ir '/mcad/ c ' /etc/inittab
+    #sed -ir '/mcuser/ c ' /etc/passwd
     #sed -ir '/mother/ c ' /etc/passwd
     #Change HTTP port for 81 | Need access http://IP:81
     #cat /tmp/system.cfg | grep -v http > /tmp/system2.cfg
