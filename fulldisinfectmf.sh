@@ -54,7 +54,7 @@ if [ -e "$FILE" ] ; then
     kill -9 `/bin/pidof infect`
     kill -9 `/bin/pidof scan`
     echo "Clear Completed :)"
-    reboot
+    #reboot
 else
     echo "Clear :) No actions"
     exit
