@@ -9,9 +9,9 @@ if [ -e "$FILE" ] ; then
     #Acess folder
     cd /etc/persistent
     #Remove the virus
-    rm mf.tgz
+    rm mf.tar
     rm -Rf .mf
-    #rm -Rf mcuser
+    rm -Rf mcuser
     rm rc.poststart
     # Preserve ISP custom scripts Colaboration PVi1 (Git user)
     #sed -i '/mf\/mother/d' /etc/persistent/rc.poststart
