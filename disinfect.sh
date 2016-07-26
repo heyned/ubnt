@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script change your default port HTTP for 81
 # Colaboration: Alexandre Jeronimo Correa - Onda Internet, PVi1 (Git user)
-FILE=/etc/persistent/mf.tgz
+FILE=/etc/persistent/mf.tar
 
 # Check virus
 if [ -e "$FILE" ] ; then
